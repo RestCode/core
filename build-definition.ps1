@@ -18,9 +18,7 @@ Properties {
 
     # A list of projects for which NuGet packages should be created
     $NugetLibraries = @(
-        "src/RestCode",
-        "src/RestCode.Core",
-        "src/RestCode.Generators"
+        "src/RestCode"
     )
 }
 
