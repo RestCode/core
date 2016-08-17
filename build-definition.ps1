@@ -2,8 +2,8 @@ Properties {
 
     # This number will be used to replace the * in all versions of all libraries.
     # This should be overwritten by a CI system like VSTS, AppVeyor, TeamCity, ...
-    $BuildNumber = "local" + ((Get-Date).ToUniversalTime().ToString("yyyyMMddHHmm"))
-
+	$tag = @{ $true = $env:PRE_RELEASE_TAG; $false = 1 }[$env:PRE_RELEASE_TAG -ne $NULL];
+    $BuildNumber = $tag + @{ $true = $env:APPVEYOR_BUILD_NUMBER; $false = 1 }[$env:APPVEYOR_BUILD_NUMBER -ne $NULL];
     # The build configuration used for compilation
     $BuildConfiguration = "Release"
 
