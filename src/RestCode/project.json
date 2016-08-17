@@ -1,0 +1,34 @@
+{
+  "version": "0.0.1-*",
+  "description": "RestCode Core Libraries",
+
+  "packOptions": {
+    "licenseUrl": "",
+    "owners": [
+      "Fanie Reynders"
+    ],
+    "projectUrl": "https://github.com/RestCode",
+    "summary": "Core libraries for RestCode",
+    "tags": [
+      "restcode",
+      "documentation",
+      "discovery",
+      "help",
+      "webapi",
+      "aspnet",
+      "aspnetcore"
+    ]
+  },
+
+  "dependencies": {
+    "RestCode.Core": "0.0.1-*",
+    "RestCode.Generators": "0.0.1-*"
+  },
+
+  "frameworks": {
+    
+    "netstandard1.6": {
+      
+    }
+  }
+}
